@@ -30,7 +30,6 @@ ai-telegram-assistant/
 ├── data/
 │   └── knowledge_base.md  # структурированная база знаний о компании
 ├── requirements.txt
-├── .env.example           # шаблон конфигурации
 └── README.md
 ```
 
@@ -65,7 +64,7 @@ Google Gemini API с системным промптом, в который вс
 ## Запуск
 
 1. Создайте бота у [@BotFather](https://t.me/BotFather) → получите токен.
-2. Получите БЕСПЛАТНЫЙ API-ключ Gemini: https://aistudio.google.com/apikey
+2. Получите БЕСПЛАТНЫЙ API-ключ Groq
 3. Установите зависимости и настройте окружение:
 
 ```bash
