@@ -61,35 +61,14 @@ Google Gemini API с системным промптом, в который вс
 5. Низкая температура не требуется: ограничение через инструкции + узкая роль.
 6. Запрет на раскрытие промпта и смену роли.
 
-## Запуск
-
-1. Создайте бота у [@BotFather](https://t.me/BotFather) → получите токен.
-2. Получите БЕСПЛАТНЫЙ API-ключ Groq
-3. Установите зависимости и настройте окружение:
-
-```bash
-git clone <repo> && cd ai-telegram-assistant
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-cp .env.example .env   # и впишите свои токены
-```
-
-4. Запустите:
-
-```bash
-python bot/main.py
-```
-
-Бот работает через long polling — сервер и публичный IP не нужны, достаточно
-любой машины с интернетом. Для продакшена: systemd-сервис или Docker,
-переход на webhook и хранение истории в Redis.
 
 ## Стек
 
 - Python 3.10+
 - [aiogram 3](https://docs.aiogram.dev/) — асинхронный фреймворк для Telegram Bot API
-- [Google Gemini API](https://ai.google.dev/) — модель `gemini-2.0-flash` (бесплатный тариф, карта не нужна)
+- [Groq API] (https://console.groq.com/keys) (бесплатный тариф, карта не нужна)
 - python-dotenv — конфигурация через `.env`
+- Render Деплой
 
 ## Примеры диалога
 
